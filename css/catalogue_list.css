@@ -1,0 +1,31 @@
+
+body {
+	background: #fff;
+}
+
+.list_li {
+	margin: .41rem .3rem 0 0;
+}
+
+.more_list {
+	font-size: .4rem;
+	text-align: center;
+	padding-top: .13rem;
+	padding-bottom: 1.17rem;
+}
+
+.more_list a {
+	height: 1.02rem;
+	display: inline-block;
+	line-height: 1.02rem;
+	width: 3.2rem;
+	color: #36b200;
+	border: 1px solid #36b200;
+	border-radius: .5rem;
+}
+
+.distance {
+	height: .24rem;
+	width: 100%;
+	background: #efefef;
+}

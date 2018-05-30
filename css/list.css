@@ -1,0 +1,34 @@
+
+body {
+	background: #fff;
+}
+
+.cate_list_other {
+	padding: .48rem 0;
+	width: 2.5rem;
+	float: none;
+	display: inline-block;
+}
+
+.catalogue_list {
+	width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #efefef;
+}
+
+.scroll_div {
+	width: 100%;
+    overflow: scroll;
+}
+
+
+
+.scroll_ul {
+	width: auto;
+	white-space: nowrap;
+}
+
+.list_li {
+	margin-top: .39rem;
+}

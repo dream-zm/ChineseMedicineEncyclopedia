@@ -1,0 +1,12 @@
+.top_list_detail {
+	padding: 0 .32rem;
+	height: 1.37rem;
+	line-height: 1.37rem;
+	border-top: 1px solid #c4c4c4;
+	background: #fff;
+	font-size:.48rem;
+}
+
+.swiper-container {
+	height: 6.36rem;
+}
