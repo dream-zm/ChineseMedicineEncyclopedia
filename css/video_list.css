@@ -1,0 +1,92 @@
+body {
+	background: #1c1d1f;
+}
+
+.praise_background_video {
+	background: #1c1d1f;
+	color: #fff;
+}
+
+.praise_list li {
+	color: #fff;
+}
+
+
+.video_lists {
+	color: #727272;
+}
+.video_list_img {
+	width: 100%;
+	height: 5.63rem;
+	position: relative;
+}
+
+.video_list_imgs {
+	width: 100%;
+	height: 100%;
+}
+
+.video_lists_div {
+	padding: .5rem .32rem .4rem;
+
+}
+.video_list_title {
+	font-size: .4rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	height: .4rem;
+	line-height: .4rem;
+	margin-bottom: .31rem;
+}
+
+.video_list_con {
+	font-size: .43rem;
+	height: .43rem;
+	line-height: .43rem;
+}
+
+.play_time {
+	float: left;
+	color: #727272;
+	font-size: .28rem;
+}
+
+.video_pause {
+	float: right;
+	color: #727272;
+}
+
+.margin_right_video {
+	margin-right: .54rem;
+}
+
+.iconfont_share {
+	font-size: .43rem;
+}
+
+.iconfont_shares {
+	font-size: .5rem;
+}
+
+video {
+	height: 5.63rem;
+	width: 100%;
+	object-fit:fill;
+}
+
+.pause_iconfont {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -.6rem;
+	margin-left: -.6rem;
+	color: #fff;
+	width: 1.2rem;
+	height: 1.2rem;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	border-radius: 50%;
+	background: rgba(0,0,0,.5);
+}

@@ -9,4 +9,314 @@
 
 .swiper-container {
 	height: 6.36rem;
+	position: relative;
 }
+
+.swiper-button-prev {
+	background-image: url(../img/detail/prev.png);
+	left: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	width: .89rem;
+	height: 1.65rem;
+	background-size: 100% 100%;
+	
+}
+
+.swiper-button-next {
+	right: 0;
+	background-image: url(../img/detail/next.png);
+
+}
+
+.swiper-slide {
+	position: relative;
+}
+
+.swiper-slide p {
+	position: absolute;
+	left: .32rem;
+	bottom: .56rem;
+	color: #fff;
+	font-size: .4rem;
+	height: .4rem;
+	line-height: .4rem;
+}
+
+.swiper-slide a {
+	position: absolute;
+	right:.32rem;
+	bottom: .35rem;
+	display: block;
+	height: .76rem;
+	line-height: .76rem;
+	background: rgba(255,255,255,.5);
+	padding: 0 .41rem;
+	border-radius: .8rem;
+	font-size: .4rem;
+	color: #fff;
+}
+
+.detail_list {
+	background: #fff;
+	margin-bottom: .2rem;
+}
+.swiper-slide a img {
+	width: .4rem;
+	height: .4rem;
+	margin-right: .2rem;
+	margin-top: -.1rem;
+	display: inline-block;
+}
+
+.detail_title {
+	font-size: .56rem;
+	color: #222;
+	height: .56rem;
+	padding: .43rem  .32rem 0  .32rem;
+	position: relative;
+	margin-bottom: .34rem;
+
+}
+
+.title_title {
+	height: .56rem;
+	line-height: .56rem;
+}
+
+.title_img {
+	position: absolute;
+	right: .32rem;
+	bottom: 0;
+	width: .46rem;
+	height: .42rem;
+}
+
+.detail_title_title {
+	font-size: .36rem;
+	height: .36rem;
+	line-height: .36rem;
+	padding-bottom: .49rem;
+	border-bottom: 1px solid #dbdbdb;
+	margin: 0 .32rem;
+}
+
+.detail_title_con {
+	font-size: .38rem;
+	color: #333;
+	line-height: .72rem;
+	padding: .52rem .32rem;
+}
+
+.detail_list_other {
+	background: #efefef;
+}
+
+
+.list_li {
+	background: #fff;
+	border-color: #fff;
+}
+
+
+.fixed_praise {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1.54rem;
+	border-top: 1px solid #d1d1d1;
+	z-index: 12;
+}
+
+.praise_background01 {
+	background-color: #fff;
+}
+
+.content {
+	padding-bottom: 1.54rem;
+}
+
+.detail_list_margin {
+	margin-bottom: 0;
+}
+
+.praise_list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	font-size: .32rem;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.praise_list li {
+	width: 1.88rem;
+	height: .72rem;
+	border: 1px solid #d0d0d0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: .5rem;
+	color: #635858;
+}
+
+.praise_list li i {
+	margin-right: .16rem;
+}
+
+.praise_list .green {
+	color: #36b200;
+}
+
+.audio_div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1.1rem;
+	color: #333;
+	z-index: 5;
+	background: rgba(255,255,255,.9);
+	font-size: .4rem;
+	line-height: 1.1rem;
+	padding: 0 .32rem;
+	display: none;
+}
+
+.audio_left {
+	float: left;
+}
+
+.audio_right {
+	float: right;
+}
+
+.margin_right01 {
+	margin-right: .4rem;
+}
+
+.margin_right02 {
+	margin-left: .3rem;
+	color: #a6a6a6;
+}
+
+.iconfont_video {
+	font-size: .97rem;
+}
+
+.swiper-slide .other_p {
+	height: .97rem;
+	bottom: .4rem;
+	padding-left: 1.25rem;
+	font-size: .28rem;
+}
+
+.swiper-slide .other_p i {
+	position: absolute;
+	left: 0;
+	top: .25rem;
+
+}
+
+.swiper-slide .other_p .video_title {
+	font-size: .4rem;
+	height: .4rem;
+	line-height: .4rem;
+	display: inline-block;
+	margin-bottom: .2rem;
+}
+
+.swiper-containers_div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 15;
+	background: #fff;
+	display: none;
+}
+
+.swiper-containers {
+	height: 100%;
+	position: relative;
+}
+
+.swiper-containers .banner_png {
+	position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.swiper-containers .swiper-slide {
+	background: #000;
+}
+
+.count {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1.37rem;
+	background: rgba(100,100,100,.5);
+	color: #fff;
+	z-index: 16;
+	font-size: .4rem;
+	padding: 0 .32rem;
+	line-height: 1.37rem;
+}
+
+.back_history {
+	margin-right: 2.49rem;
+}
+
+.praise_background02 .praise_list li{
+	color: #fff;
+	width: 25%;
+	border: 0;
+	border-right: 1px solid;
+	border-color: rgba(255,255,255,.3);
+	border-radius: 0;
+	height: 100%;
+}
+
+.praise_background02 .praise_list li:nth-child(4) {
+	border-right: 0;
+}
+.praise_background02 {
+	border-color: rgba(255,255,255,.3);
+	background: rgba(100,100,100,.5);
+}
+.detail_img_big {
+	position: fixed;
+	bottom: 1.55rem;
+	left: 0;
+	right: 0;
+	color: #fff;
+	font-size: .4rem;
+	padding-left: .32rem;
+	display: block;
+	height: 1.18rem;
+	line-height: 1.18rem;
+	background: rgba(100,100,100,.5);
+	z-index: 20;
+}
+
+.middle_span {
+	display:inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.audio_play {
+	display: none;
+}
+
+
+
+
+
+
+

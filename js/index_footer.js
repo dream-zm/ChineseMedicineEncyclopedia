@@ -132,9 +132,7 @@ $(function(){
                 <p>金线吊葫芦</p>
             </li>    
         </ul>
-
         `
-
 	$(".search_con").append(search_con);
 	$(".top").append(nav);
 	$(".top_nav").append(nav_cateloge);
@@ -165,6 +163,11 @@ $(function(){
 	})
 
 
+})
+
+
+$(".praise_list").on('click', 'li', function () {
+    $(this).addClass("green").siblings().removeClass("green");
 })
 
 

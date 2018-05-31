@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="full-screen" content="yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>详情页面</title>
+    <!--flexible布局-->
+    <script src="js/common/flexible.js"></script>
+    <!--公共引用-->
+    <script src="js/common/jquery-2.1.4.js"></script>
+    <!-- 公共头部js -->
+    <script src="js/index_top.js"></script>
+    <link rel="stylesheet" href="plug/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="plug/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/common/swiper.min.css">
+    <link rel="stylesheet" href="css/common/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/video_list.css">
+</head>
+
+<body>
+    <div class="search_con">
+      <!-- 公共搜索 -->  
+    </div>
+    <div class="top_list_detail">
+       <!-- 公共头部 -->
+    </div>
+    <div class="catalogue">
+        <!-- 公共目录 -->
+        <div class="top_nav">
+            <!-- 公共头部 -->
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li class="video_lists">
+                <div class="video_list_img">
+                   <video width="100%">
+                        <source src="img/detail/movie.ogg" type="video/ogg" />
+                        <!-- <source src="my_video.ogv" type="video/mp4" /> -->
+                   </video>
+                   <div class="pause_iconfont">
+                       <i class="iconfont">&#xe696;</i>
+                   </div>
+                </div>
+                <div class="video_lists_div">
+                    <p class="video_list_title">寒痰湿痰及次食生痰不宜用寒痰湿痰及次食生痰不宜用</p>
+                    <p class="clear video_list_con">
+                        <a href="javascipt:;" class="play_time">播放次数：<span>3654</span>次</a>
+                        <a href="javascipt:;" class="video_pause">
+                            <i class="iconfont iconfont_shares">&#xe681;</i>
+                            <span class="margin_right_video"> 16 </span>
+                            <i class="iconfont iconfont_share">&#xe60f;</i>
+                        </a>
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="video_lists">
+                <div class="video_list_img">
+                   <video width="100%">
+                        <source src="img/detail/movie.ogg" type="video/ogg" />
+                        <!-- <source src="my_video.ogv" type="video/mp4" /> -->
+                   </video>
+                   <div class="pause_iconfont">
+                       <i class="iconfont">&#xe696;</i>
+                   </div>
+                </div>
+                <div class="video_lists_div">
+                    <p class="video_list_title">寒痰湿痰及次食生痰不宜用寒痰湿痰及次食生痰不宜用</p>
+                    <p class="clear video_list_con">
+                        <a href="javascipt:;" class="play_time">播放次数：<span>3654</span>次</a>
+                        <a href="javascipt:;" class="video_pause">
+                            <i class="iconfont iconfont_shares">&#xe681;</i>
+                            <span class="margin_right_video"> 16 </span>
+                            <i class="iconfont iconfont_share">&#xe60f;</i>
+                        </a>
+                    </p>
+                    
+                </div>
+            </li>
+
+
+        </ul>
+            
+
+    </div>
+    <div class="fixed_praise praise_background_video">
+        <ul class="praise_list">
+            <li>
+                <i class="iconfont">&#xe62c;</i><span>赞同</span>
+            </li>
+            <li>
+                <i class="iconfont">&#xe61e;</i><span>分享</span>
+            </li>
+            <li>
+                <i class="iconfont">&#xe812;</i><span>收藏</span>
+            </li>
+            <li>
+                <i class="iconfont">&#xe60d;</i><span>评论</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+
+<!--layui框架.js-->
+<script src="plug/layui/layui.js"></script>
+<!--swiper-->
+<script src="js/common/swiper.min.js"></script>
+<!-- 公共底部js -->
+<script src="js/index_footer.js"></script>
+<!-- 本页面js -->
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        initialSlide: 0,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true,//修改swiper的父元素时，自动初始化swiper
+        onSlideChangeEnd: function (swiper) {
+            swiper.update();
+            mySwiper.startAutoplay();
+            mySwiper.reLoop();
+        },
+        pagination: {
+            el: '.swiper-pagination',
+           // clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    
+    }) 
+
+
+    var video = $(".video_list_img");
+    var video_play = $("video");
+    var pause_iconfont = $(".pause_iconfont");
+    video.on("click",  function (e) {
+       var index = $(e.currentTarget).index();
+       for(var i=0;i<$("video").length;i++) {
+            if (!$("video").eq(i)[0].paused) {
+                $("video").eq(i)[0].load();
+            }
+       }
+       $(e.currentTarget).find("video")[0].play();
+       $(e.currentTarget).find(".pause_iconfont").hide();
+    })
+
+</script>
+</html>
