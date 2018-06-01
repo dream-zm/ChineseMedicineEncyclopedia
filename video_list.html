@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/video_list.css">
+    <script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.1.js" charset="utf-8"></script> 
 </head>
 
 <body>
@@ -41,6 +42,30 @@
     </div>
     <div class="content">
         <ul>
+            <li class="video_lists">
+                <div class="video_list_img">
+                   <video width="100%" controls>
+                        <source src="img/detail/movie.ogg" type="video/ogg" />
+                        <!-- <source src="my_video.ogv" type="video/mp4" /> -->
+                   </video>
+                   <div class="pause_iconfont">
+                       <i class="iconfont">&#xe696;</i>
+                   </div>
+                </div>
+                <div class="video_lists_div">
+                    <p class="video_list_title">寒痰湿痰及次食生痰不宜用寒痰湿痰及次食生痰不宜用</p>
+                    <p class="clear video_list_con">
+                        <a href="javascipt:;" class="play_time">播放次数：<span>3654</span>次</a>
+                        <a href="javascipt:;" class="video_pause">
+                            <i class="iconfont iconfont_shares">&#xe681;</i>
+                            <span class="margin_right_video"> 16 </span>
+                            <i class="iconfont iconfont_share">&#xe60f;</i>
+                        </a>
+                    </p>
+                    
+                </div>
+            </li>
+
             <li class="video_lists">
                 <div class="video_list_img">
                    <video width="100%">
@@ -65,7 +90,33 @@
                 </div>
             </li>
 
-            <li class="video_lists">
+
+             <li class="video_lists">
+                <div class="video_list_img">
+                   <video width="100%">
+                        <source src="img/detail/movie.ogg" type="video/ogg" />
+                        <!-- <source src="my_video.ogv" type="video/mp4" /> -->
+                   </video>
+                   <div class="pause_iconfont">
+                       <i class="iconfont">&#xe696;</i>
+                   </div>
+                </div>
+                <div class="video_lists_div">
+                    <p class="video_list_title">寒痰湿痰及次食生痰不宜用寒痰湿痰及次食生痰不宜用</p>
+                    <p class="clear video_list_con">
+                        <a href="javascipt:;" class="play_time">播放次数：<span>3654</span>次</a>
+                        <a href="javascipt:;" class="video_pause">
+                            <i class="iconfont iconfont_shares">&#xe681;</i>
+                            <span class="margin_right_video"> 16 </span>
+                            <i class="iconfont iconfont_share">&#xe60f;</i>
+                        </a>
+                    </p>
+                    
+                </div>
+            </li>
+
+
+             <li class="video_lists">
                 <div class="video_list_img">
                    <video width="100%">
                         <source src="img/detail/movie.ogg" type="video/ogg" />
@@ -146,7 +197,7 @@
     
     }) 
 
-
+    var video_list = $(".video_lists");
     var video = $(".video_list_img");
     var video_play = $("video");
     var pause_iconfont = $(".pause_iconfont");
@@ -155,6 +206,7 @@
        for(var i=0;i<$("video").length;i++) {
             if (!$("video").eq(i)[0].paused) {
                 $("video").eq(i)[0].load();
+                $("video").eq(i).next().show();
             }
        }
        $(e.currentTarget).find("video")[0].play();

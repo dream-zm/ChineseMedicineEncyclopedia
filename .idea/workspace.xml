@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de82bcae-8029-4d55-b5a6-33c23c87e3fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/detail.css" afterPath="$PROJECT_DIR$/css/detail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detail.html" afterPath="$PROJECT_DIR$/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index_footer.js" afterPath="$PROJECT_DIR$/js/index_footer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/video_list.css" afterPath="$PROJECT_DIR$/css/video_list.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_list.html" afterPath="$PROJECT_DIR$/video_list.html" />
     </list>
     <ignored path="ChineseMedicineEncyclopedia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,9 +29,18 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="200">
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <folding>
+                <element signature="e#7107#7115#1" expanded="true" />
+                <element signature="e#7206#7214#1" expanded="true" />
+                <element signature="e#7305#7313#1" expanded="true" />
+                <element signature="e#7404#7412#1" expanded="true" />
+                <element signature="e#8811#8819#1" expanded="true" />
+                <element signature="e#8934#8942#1" expanded="true" />
+                <element signature="e#9057#9065#1" expanded="true" />
+                <element signature="e#9180#9188#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,12 +144,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527737179436</updated>
-      <workItem from="1527737182647" duration="638000" />
+      <workItem from="1527737182647" duration="1240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="638000" />
+    <option name="totallyTimeSpent" value="1240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
@@ -177,9 +184,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding>
+            <element signature="e#7107#7115#1" expanded="true" />
+            <element signature="e#7206#7214#1" expanded="true" />
+            <element signature="e#7305#7313#1" expanded="true" />
+            <element signature="e#7404#7412#1" expanded="true" />
+            <element signature="e#8811#8819#1" expanded="true" />
+            <element signature="e#8934#8942#1" expanded="true" />
+            <element signature="e#9057#9065#1" expanded="true" />
+            <element signature="e#9180#9188#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

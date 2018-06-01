@@ -75,6 +75,10 @@ video {
 	object-fit:fill;
 }
 
+video input {
+	background: #000;
+}
+
 .pause_iconfont {
 	position: absolute;
 	top: 50%;
