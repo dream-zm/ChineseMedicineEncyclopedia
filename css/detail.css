@@ -98,7 +98,7 @@
 	height: .36rem;
 	line-height: .36rem;
 	padding-bottom: .49rem;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid #eee;
 	margin: 0 .32rem;
 }
 
@@ -127,7 +127,7 @@
 	right: 0;
 	height: 1.54rem;
 	border-top: 1px solid #d1d1d1;
-	z-index: 12;
+	z-index: 9;
 }
 
 .praise_background01 {
@@ -280,6 +280,10 @@
 	border-color: rgba(255,255,255,.3);
 	border-radius: 0;
 	height: 100%;
+}
+
+.praise_background02 .praise_list .green {
+	color: #36b200;
 }
 
 .praise_background02 .praise_list li:nth-child(4) {

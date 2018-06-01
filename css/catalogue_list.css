@@ -4,7 +4,7 @@ body {
 }
 
 .list_li {
-	margin: .41rem .3rem 0 0;
+	margin: .41rem .5rem 0 0;
 }
 
 .more_list {
@@ -29,3 +29,5 @@ body {
 	width: 100%;
 	background: #efefef;
 }
+
+

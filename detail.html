@@ -79,12 +79,33 @@
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
+            <div class="audio_div">
+                <p class="audio_left">
+                    <i class="iconfont">&#xe61a;</i>
+                    正在收听：<span>竹沥</span>
+                    
+                </p>
+                <p class="audio_right">
+                    <i class="iconfont margin_right01 prev_music">&#xe78a;</i>
+                    <i class="iconfont margin_right01 stop_music">&#xe61f;</i>
+                    <i class="iconfont next_music">&#xe7a5;</i> 
+                    <i class="iconfont margin_right02">&#xe612;</i> 
+                </p>
+            </div>
+
         </div>
 
         <div class="detail_list">
             <div class="detail_title">
                 <p class="title_title">竹沥<span>[zhuli]</span></p>
                 <img class="title_img" src="img/detail/audio.png">
+                <audio class="audio_play">
+                    <!-- <source src="audio/audio.ogg" type="audio/ogg">
+                    <source src="audio/audio.mpeg" type="audio/mpeg"> -->
+                    <source src="audio/bye.mp3" type="audio/mp3">
+                    你的浏览器不支持html5的audio标签
+                </audio>
             </div>
             <p class="detail_title_title">竹沥</p>
             <p class="detail_title_con">
@@ -96,6 +117,12 @@
             <div class="detail_title">
                 <p class="title_title">概述</p>
                 <img class="title_img" src="img/detail/audio.png">
+                 <audio class="audio_play">
+                    <!-- <source src="audio/audio.ogg" type="audio/ogg">
+                    <source src="audio/audio.mpeg" type="audio/mpeg"> -->
+                    <source src="audio/me.mp3" type="audio/mp3">
+                    你的浏览器不支持html5的audio标签
+                </audio>
             </div>
             <p class="detail_title_con">
                 竹沥，中药名。为禾本科植物淡竹等的茎经火烤后所流出的液汁。分布于山东、河南及长江流域以南各地。具有清肺降火，滑痰利窍之功效。用于中风痰迷，肺热痰壅，惊风，癫痫，热病痰多，壮热烦渴，子烦，破伤风。竹沥是竹子经加工后提取的汁液。它是一种无毒无副作用集药、食两用的天然饮品。化痰止咳平喘药。制法为取鲜竹杆,截成30～50厘米长,两端去节,劈开,架起,中部用火烤之,两端即有液汁流出,以器盛之。青黄色或黄棕色液汁，透明具焦香气。以色泽透明，无杂持者为佳。性味甘寒，能清心肺胃之火，有豁痰润燥、定惊之效。主要用于治中风痰迷，肺热痰壅，惊风，癫痫，壮热烦渴，子烦，破伤风。
@@ -106,6 +133,12 @@
             <div class="detail_title">
                 <p class="title_title">药品简述</p>
                 <img class="title_img" src="img/detail/audio.png">
+                <audio class="audio_play">
+                    <!-- <source src="audio/audio.ogg" type="audio/ogg">
+                    <source src="audio/audio.mpeg" type="audio/mpeg"> -->
+                    <source src="audio/allyou.mp3" type="audio/mp3">
+                    你的浏览器不支持html5的audio标签
+                </audio>
             </div>
             <p class="detail_title_con">
                 药名：竹沥 
@@ -119,6 +152,12 @@
             <div class="detail_title">
                 <p class="title_title">中药化学成分</p>
                 <img class="title_img" src="img/detail/audio.png">
+                <audio class="audio_play">
+                    <!-- <source src="audio/audio.ogg" type="audio/ogg">
+                    <source src="audio/audio.mpeg" type="audio/mpeg"> -->
+                    <source src="audio/audio.mp3" type="audio/mp3">
+                    你的浏览器不支持html5的audio标签
+                </audio>
             </div>
             <p class="detail_title_con">
                 淡竹等鲜竹沥水溶性部分含天冬氨酸（aspartic acid），蛋氨酸（methionine），丝氨酸（serine），脯氨酸（proline）等十三种氨基酸；早竹等竹沥中尚含胱氨酸（acetic acid），苯甲酸（benzoic acid），水杨酸（salicylic acid）等。
@@ -295,8 +334,89 @@
         $(".back_history").on("click", function () {
             $(".swiper-containers_div").hide();
         })
+
+
+
+         $(".detail_list").on("click", ".title_img", function () {
+            close_music();
+            $(".audio_div").show();
+            $(this).next()[0].load();
+            $(this).next()[0].play();
+        })
+
+        $(".margin_right02").on("click", function () {
+            close_music();
+            $(".audio_div").hide();
+        })
+
+        $(".next_music").on("click", function () {
+            next_music();
+        })
+
+        $(".prev_music").on("click", function () {
+            prev_music();
+        })
+
+        $(".stop_music").on("click", function () {
+            stop_music();
+        })
+
+        $(".praise_list").on('click', 'li', function () {
+            $(this).addClass("green").siblings().removeClass("green");
+        })
+
+        function close_music () {
+            var audio = document.getElementsByTagName("audio");
+            for (var i=0;i<audio.length;i++) {
+                audio[i].load();
+            }
+        }
+
+        function next_music () {
+            var audio = document.getElementsByTagName("audio");
+            for (var i=0;i<audio.length;i++) {
+                if (!audio[i].paused) {
+                    audio[i].load();
+                    var num = 0;
+                    if (i == (audio.length-1)) {
+                        num = 0;
+                    } else {
+                        num = parseInt(i,10)+1;  
+                    }     
+                }
+            }
+            audio[num].play();
+        }
+
+        function prev_music () {
+            var audio = document.getElementsByTagName("audio");
+            for (var i = audio.length-1;i>=0;i--) {
+                if (!audio[i].paused) {
+                    audio[i].load();
+                    var num = 0;
+                    if (i == 0 ) {
+                        num = audio.length-1;
+                    } else {
+                        num = parseInt(i,10)-1;  
+                    }
+                     
+                }
+            }
+            audio[num].play();
+        }
+
+        function stop_music () {
+            var audio = document.getElementsByTagName("audio");
+            for (var i = audio.length-1;i>=0;i--) {
+                if (!audio[i].paused) {
+                    audio[i].pause();     
+                }
+            }
+        }
     }
 
+
+     
 
 
 </script>

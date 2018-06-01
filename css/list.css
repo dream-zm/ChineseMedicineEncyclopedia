@@ -19,9 +19,8 @@ body {
 
 .scroll_div {
 	width: 100%;
-    overflow: scroll;
+	overflow: scroll;
 }
-
 
 
 .scroll_ul {
