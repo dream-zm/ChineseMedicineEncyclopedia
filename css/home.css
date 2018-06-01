@@ -39,7 +39,7 @@ body {
 	line-height: 1.22rem;
 	font-size: .4rem;
 	color: #222;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: .01rem solid #dbdbdb;
 	margin-bottom: .43rem;
 	padding: 0 .32rem;
 }
