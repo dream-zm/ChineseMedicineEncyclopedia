@@ -71,7 +71,7 @@ body {
 .list_li {
 	float: left;
 	width: 4.33rem;
-	border: .1rem solid #eee;
+	border: .05rem solid #eee;
 	border-radius: 5px;
 	margin-right: .3rem;
 	margin-bottom: .41rem;
