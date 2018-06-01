@@ -162,6 +162,10 @@ $(function(){
 	    $(".content").css("display")=="block"? $(".content").css("display","none"): $(".content").css("display","block");
 	})
 
+    $(".search_title").on("input propertychange", function() {
+        alert('监听中');
+    })
+
 
 })
 

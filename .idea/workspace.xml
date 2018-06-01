@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de82bcae-8029-4d55-b5a6-33c23c87e3fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/video_list.css" afterPath="$PROJECT_DIR$/css/video_list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_list.html" afterPath="$PROJECT_DIR$/video_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ChineseMedicineEncyclopedia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,16 +29,21 @@
         <entry file="file://$PROJECT_DIR$/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
-                <element signature="e#7107#7115#1" expanded="true" />
-                <element signature="e#7206#7214#1" expanded="true" />
-                <element signature="e#7305#7313#1" expanded="true" />
-                <element signature="e#7404#7412#1" expanded="true" />
-                <element signature="e#8811#8819#1" expanded="true" />
-                <element signature="e#8934#8942#1" expanded="true" />
-                <element signature="e#9057#9065#1" expanded="true" />
-                <element signature="e#9180#9188#1" expanded="true" />
+                <element signature="e#3895#3903#1" expanded="true" />
+                <element signature="e#4097#4105#1" expanded="true" />
+                <element signature="e#4176#4184#1" expanded="true" />
+                <element signature="e#4240#4248#1" expanded="true" />
+                <element signature="e#4309#4317#1" expanded="true" />
+                <element signature="e#8386#8394#1" expanded="true" />
+                <element signature="e#8485#8493#1" expanded="true" />
+                <element signature="e#8584#8592#1" expanded="true" />
+                <element signature="e#8683#8691#1" expanded="true" />
+                <element signature="e#10090#10098#1" expanded="true" />
+                <element signature="e#10213#10221#1" expanded="true" />
+                <element signature="e#10336#10344#1" expanded="true" />
+                <element signature="e#10459#10467#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,6 +141,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="de82bcae-8029-4d55-b5a6-33c23c87e3fe" name="Default" comment="" />
@@ -152,7 +159,7 @@
     <option name="totallyTimeSpent" value="1240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -185,16 +192,21 @@
     <entry file="file://$PROJECT_DIR$/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
-            <element signature="e#7107#7115#1" expanded="true" />
-            <element signature="e#7206#7214#1" expanded="true" />
-            <element signature="e#7305#7313#1" expanded="true" />
-            <element signature="e#7404#7412#1" expanded="true" />
-            <element signature="e#8811#8819#1" expanded="true" />
-            <element signature="e#8934#8942#1" expanded="true" />
-            <element signature="e#9057#9065#1" expanded="true" />
-            <element signature="e#9180#9188#1" expanded="true" />
+            <element signature="e#3895#3903#1" expanded="true" />
+            <element signature="e#4097#4105#1" expanded="true" />
+            <element signature="e#4176#4184#1" expanded="true" />
+            <element signature="e#4240#4248#1" expanded="true" />
+            <element signature="e#4309#4317#1" expanded="true" />
+            <element signature="e#8386#8394#1" expanded="true" />
+            <element signature="e#8485#8493#1" expanded="true" />
+            <element signature="e#8584#8592#1" expanded="true" />
+            <element signature="e#8683#8691#1" expanded="true" />
+            <element signature="e#10090#10098#1" expanded="true" />
+            <element signature="e#10213#10221#1" expanded="true" />
+            <element signature="e#10336#10344#1" expanded="true" />
+            <element signature="e#10459#10467#1" expanded="true" />
           </folding>
         </state>
       </provider>
