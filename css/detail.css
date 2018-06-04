@@ -318,6 +318,51 @@
 	display: none;
 }
 
+.video_container {
+	width: 100%;
+	height: 5.63rem;
+	position: absolute;
+	top: 53px;
+	left: 0;
+}
+
+.video_container .vcp-fullscreen.vcp-player, .vcp-fullscreen video, body.vcp-full-window {
+	height: 5.63rem!important;
+}
+
+.video_img {
+	width: 100%;
+	height: 100%;
+}
+
+.video_container .vcp-controls-panel {
+	height: 2em;
+}
+.video_container .vcp-playtoggle {
+	background-repeat: no-repeat;
+	height: 2em;
+	display: none;
+}
+
+.video_container .vcp-timelabel {
+	height: 2em;
+	line-height: 2em;
+}
+
+
+.video_container .vcp-fullscreen-toggle {
+	height: 2em;
+	background-repeat: no-repeat;
+}
+
+.video_container .pause_iconfonts {
+	top: -2rem;
+}
+
+
+
+
+
 
 
 

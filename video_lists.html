@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/video_list.css">
+    <script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.1.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -43,6 +44,7 @@
         <ul>
             <li class="video_lists">
                 <div class="video_list_img">
+                    <img class="video_img" src="img/detail/video_05.png">
                    <div class="pause_iconfont">
                        <i class="iconfont">&#xe696;</i>
                    </div>
@@ -63,7 +65,9 @@
 
             <li class="video_lists">
                 <div class="video_list_img">
-                   <div class="pause_iconfont">
+                    <img class="video_img" src="img/detail/video_05.png">
+                    <div class="pause_iconfont">
+
                        <i class="iconfont">&#xe696;</i>
                    </div>
                 </div>
@@ -84,9 +88,10 @@
 
              <li class="video_lists">
                 <div class="video_list_img">
-                   <div class="pause_iconfont">
+                    <img class="video_img" src="img/detail/video_05.png">
+                    <div class="pause_iconfont">
                        <i class="iconfont">&#xe696;</i>
-                   </div>
+                    </div>
                 </div>
                 <div class="video_lists_div">
                     <p class="video_list_title">寒痰湿痰及次食生痰不宜用寒痰湿痰及次食生痰不宜用</p>
@@ -105,6 +110,7 @@
 
              <li class="video_lists">
                 <div class="video_list_img">
+                    <img class="video_img" src="img/detail/video_05.png">
                    <div class="pause_iconfont">
                        <i class="iconfont">&#xe696;</i>
                    </div>
@@ -122,15 +128,8 @@
                     
                 </div>
             </li>
-
-
         </ul>
-        <video width="100%">
-            <source src="img/detail/movie.ogg" type="video/ogg" />
-            <!-- <source src="my_video.ogv" type="video/mp4" /> -->
-       </video>
-            
-
+        
     </div>
     <div class="fixed_praise praise_background_video">
         <ul class="praise_list">
@@ -147,6 +146,10 @@
                 <i class="iconfont">&#xe60d;</i><span>评论</span>
             </li>
         </ul>
+    </div>
+
+    <div class="video_container">
+        <div id="id_test_video" style="width:100%; height:5.63rem"></div>
     </div>
 </body>
 
@@ -189,16 +192,25 @@
     var video_play = $("video");
     var pause_iconfont = $(".pause_iconfont");
     video.on("click",  function (e) {
-       var index = $(e.currentTarget).index();
-       for(var i=0;i<$("video").length;i++) {
-            if (!$("video").eq(i)[0].paused) {
-                $("video").eq(i)[0].load();
-                $("video").eq(i).next().show();
-            }
-       }
-       $(e.currentTarget).find("video")[0].play();
-       $(e.currentTarget).find(".pause_iconfont").hide();
+       $(".video_container").css("top", $(this).offset().top);
+       $(".video_container").show();
+       player.play();  
     })
 
+    
+
+    var player = new TcPlayer('id_test_video', {
+        "m3u8": "http://1253453563.vod2.myqcloud.com/2e17e7c4vodgzp1253453563/2b93b0134564972819267043647/EFsLlyu2zJIA.mp4", //请替换成实际可用的播放地址
+        "autoplay" : true,      //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+        "width" :  '100%',//视频的显示宽度，请尽量使用视频分辨率宽度
+        "height" : '100%'//视频的显示高度，请尽量使用视频分辨率高
+    })
+
+    $(".vcp-controls-panel").append('<div class="pause_iconfont pause_iconfonts"><i class="iconfont">&#xe600;</i></div>');
+    $(".pause_iconfonts").on("click", function () {
+        player.pause();
+        $(".video_container").hide();
+
+    })
 </script>
 </html>
