@@ -192,9 +192,30 @@
     var video_play = $("video");
     var pause_iconfont = $(".pause_iconfont");
     video.on("click",  function (e) {
+
+        if (player != undefined && player != null) {
+            player.destroy();
+        } 
+
+        player = new TcPlayer('id_test_video', {
+            "m3u8": "img/detail/movie.ogg", //请替换成实际可用的播放地址
+            "autoplay" : true,      //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+            "width" :  '100%',//视频的显示宽度，请尽量使用视频分辨率宽度
+            "height" : '100%'//视频的显示高度，请尽量使用视频分辨率高
+        })
+
        $(".video_container").css("top", $(this).offset().top);
        $(".video_container").show();
-       player.play();  
+       player.play(); 
+
+
+       $(".vcp-controls-panel").append('<div class="pause_iconfont pause_iconfonts"><i class="iconfont">&#xe600;</i></div>');
+            $(".pause_iconfonts").on("click", function () {
+            player.pause();
+            $(".video_container").hide();
+
+        }) 
+       
     })
 
     
