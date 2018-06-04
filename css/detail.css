@@ -359,6 +359,19 @@
 	top: -2rem;
 }
 
+.video_container .vcp-timeline {
+	height: 5px;
+}
+
+.video_container .vcp-timeline:hover .vcp-slider-thumb {
+	height: 5px;
+	width: 5px;
+}
+
+.video_container .vcp-timeline:hover .vcp-slider {
+	height: 5px;
+}
+
 
 
 
