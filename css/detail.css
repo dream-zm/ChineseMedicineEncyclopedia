@@ -85,6 +85,12 @@
 	line-height: .56rem;
 }
 
+.title_title span {
+	font-size: .32rem;
+    margin-left: .4rem;
+}
+
+
 .title_img {
 	position: absolute;
 	right: .32rem;
